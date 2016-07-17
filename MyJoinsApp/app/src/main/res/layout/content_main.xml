@@ -16,29 +16,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add Data"
-        android:id="@+id/button"
-
+        android:id="@+id/addDataButton"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/button2"
-        android:layout_alignEnd="@+id/button2" />
+        android:layout_alignRight="@+id/sameCompanyButton"
+        android:layout_alignEnd="@+id/sameCompanyButton" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Employees Working At Same Company"
-        android:id="@+id/button2"
-        android:layout_below="@+id/button"
-        android:layout_alignRight="@+id/button3"
-        android:layout_alignEnd="@+id/button3" />
+        android:id="@+id/sameCompanyButton"
+        android:layout_below="@+id/addDataButton"
+        android:layout_alignRight="@+id/companyCityButton"
+        android:layout_alignEnd="@+id/companyCityButton" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Companies In Boston"
-        android:id="@+id/button3"
-        android:layout_below="@+id/button2"
+        android:id="@+id/companyCityButton"
+        android:layout_below="@+id/sameCompanyButton"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -46,19 +45,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Company With Highest Salary"
-        android:id="@+id/button4"
-        android:layout_below="@+id/button3"
-        android:layout_alignRight="@+id/button3"
-        android:layout_alignEnd="@+id/button3" />
+        android:id="@+id/salaryButton"
+        android:layout_below="@+id/companyCityButton"
+        android:layout_alignRight="@+id/companyCityButton"
+        android:layout_alignEnd="@+id/companyCityButton" />
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Company w/ Highest Salary"
-        android:id="@+id/textview1"
+        android:id="@+id/salaryTextview"
         android:textSize="20dp"
-        android:layout_below="@+id/button4"
+        android:layout_below="@+id/salaryButton"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:padding="5dp"
@@ -68,7 +67,7 @@
         android:id="@+id/two_or_more_listview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textview1"
+        android:layout_below="@+id/salaryTextview"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"></ListView>
 </RelativeLayout>

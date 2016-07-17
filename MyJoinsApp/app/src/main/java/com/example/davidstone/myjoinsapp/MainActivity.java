@@ -12,10 +12,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
 
-    Button mAddDataButton;
-    EditText mEmplSsnEditText;
+    private List<EditText> employeeData;
+
+    private Button mAddDataButton;
+    EditText mEmplSsnEditText =
     EditText mFirstNameEditText;
     EditText mLastNameEditText;
     EditText mYobEditText;
@@ -26,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     EditText mSalary;
     EditText mExperience;
 
-    Button mGetCompanyJoins;
+    private Button mGetCompanyJoinsButton;
 
 
     @Override
@@ -45,6 +50,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        employeeData = new ArrayList<>();
+        employeeData.add((EditText) findViewById(R.id.));
+        employeeData.add((EditText) findViewById(R.id.noun2));
+        employeeData.add((EditText) findViewById(R.id.adjective1));
+        employeeData.add((EditText) findViewById(R.id.adjective2));
+        employeeData.add((EditText) findViewById(R.id.animals));
+        employeeData.add((EditText) findViewById(R.id.name));
+
+        mAddDataButton = (Button) findViewById(R.id.addDataButton);
         mAddDataButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -70,7 +84,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mGetCompanyJoins.setOnClickListener(new View.OnClickListener() {
+        mGetCompanyJoinsButton = (Button) findViewById(R.id.sameCompanyButton);
+        mGetCompanyJoinsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
